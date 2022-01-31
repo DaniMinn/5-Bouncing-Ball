@@ -40,7 +40,7 @@ Ball.prototype.update = function(){
     if((this.x + this.size) >= width){ //includo this.size per far rimbalzare la pallina sul bordo e non sul suo centro
         this.velX = -(this.velX);
     }
-    if((this.x - this.size) <= width){
+    if((this.x - this.size) <= 0){
         this.velX = -(this.velX);
     }
     if((this.y + this.size) >= height){
